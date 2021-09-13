@@ -1,0 +1,18 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark flex-md-row flex-column">
+    <div class="container-fluid">
+        <a class="navbar-brand {{ acceuil.isActive }}" href="{{ path( "acceuil" )}}">Acceuil</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link {{ moi.isActive }}" aria-current="page" href="{{ path( "moi" ) }}">Me myself & I</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {{ projets.isActive }}" href="{{ path( "projets" ) }}">Projets Persos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {{ contact.isActive }}" href="{{ path( "contact" ) }}">Me contacter</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

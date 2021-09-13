@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {{ encore_entry_script_tags('acceuil') }}
+{% endblock %}
+
+{% block title %}
+    Acceuil
+{% endblock %}
+
+{% block titre %}Bienvenue sur {{nom_page}}{% endblock %}
+
+{% block body %}
+{#}<div><img src ="{{ asset("acceuil") }}"></div>#}
+{% endblock %}
